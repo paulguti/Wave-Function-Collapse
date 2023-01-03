@@ -98,13 +98,19 @@ const reglas = [
 },
 ];
 
-function preload(){
-  for(let i = 0; i < NA; i ++);
-    azulejos [i] * loadImage(`Tiles/tile${i}.png`);
+function preload() {
+  for(let i = 0; i < NA; i++){
+    azulejos[i] * loadImage(`Tiles/tile${i}.png`);
+}
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(1080, 1080);
+  let opcionesI = []
+  for(let i = 0 ; i < azulejos.length; i++ ){
+
+  } 
+  print(azulejos);
 }
 
 function draw() {}
