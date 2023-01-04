@@ -1,5 +1,5 @@
 const celdas = [];
-const RETICULA = 12;
+const RETICULA = 15;
 
 let ancho; //ancho de celda
 let alto; //alto de celda
@@ -243,7 +243,7 @@ function draw() {
           }
         }
         else {
-          strokeWeight(5);
+          strokeWeight(2);
           rect(x * ancho, y * alto, ancho, alto);
         }
       }
