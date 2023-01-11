@@ -1,5 +1,5 @@
 const celdas = [];
-const RETICULA = 15;
+const RETICULA = 12;
 
 let ancho; //ancho de celda
 let alto; //alto de celda
@@ -8,6 +8,9 @@ let opcionesI = [];
 
 const azulejos = [];
 const NA = 11; //# de azulejos
+
+
+
 
 const reglas = [
   //Bordes de Azulejos
@@ -103,6 +106,8 @@ const reglas = [
   LEFT: 0,
 },
 ];
+
+
 
 function preload() {
   for(let i = 0; i < NA; i++){
@@ -243,7 +248,7 @@ function draw() {
           }
         }
         else {
-          strokeWeight(2);
+          strokeWeight(0);
           rect(x * ancho, y * alto, ancho, alto);
         }
       }
@@ -255,14 +260,14 @@ function draw() {
   // ACTIVAR LOOP
 
 
-   else {
-     for (let i = 0; i < RETICULA * RETICULA; i++) {
-      celdas[i] = {
-       colapsada: false,
-       opciones: opcionesI,
-       };
-     }
-   }
+   //else {
+     //for (let i = 0; i < RETICULA * RETICULA; i++) {
+      //celdas[i] = {
+      // colapsada: false,
+       //opciones: opcionesI,
+       //};
+     //}
+   //}
 }
 
 function entropia (_celda, _regla, _opuesto) {
